@@ -1,4 +1,4 @@
-# {{ name }}
+# 试一试preact😎
 
 ## CLI Commands
 
