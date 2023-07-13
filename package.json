@@ -5,7 +5,7 @@
 	"private": true,
 	"scripts": {
 		"build": "preact build",
-		"serve": "sirv build --port 8080 --cors --single",
+		"serve": "sirv build --port 8090 --cors --single",
 		"dev": "preact watch --port 8090",
 		"lint": "eslint src",
 		"test": "jest"

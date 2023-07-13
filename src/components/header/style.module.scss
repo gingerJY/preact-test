@@ -24,7 +24,8 @@
   .user {
     margin: 0 30px;
     width: 108px;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .nav {
@@ -73,6 +74,12 @@
 
     .active:after {
       width: 100%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .nav {
+      display: none;
     }
   }
 }

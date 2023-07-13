@@ -1,5 +1,8 @@
+@import "./font/roboto.css";
+@import "./font/Poppins.css";
+
 :root {
-	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-family: 'Poppins';
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

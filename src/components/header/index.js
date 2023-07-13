@@ -1,7 +1,7 @@
 import { Link } from 'preact-router/match';
 import style from './style.module.scss';
 
-export function Header() {
+export default function Header() {
   return (
     <header class={style.header}>
       <a href="/" class={style.logo}>
