@@ -12,7 +12,7 @@ export default function Header() {
           <span class={style.navItemText}>Spatial Display</span>
           <span class={style.navItemLabel}>for everything</span>
         </Link>
-        <Link class={style.navItem} activeClassName={style.active} href="/profile">
+        <Link class={style.navItem} activeClassName={style.active} href="/nebula-for-mac">
           <span class={style.navItemText}>Nebula</span>
           <span class={style.navItemLabel}>for Mac/PC</span>
         </Link>

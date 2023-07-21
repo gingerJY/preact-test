@@ -47,3 +47,6 @@ a{
 img{
     display: block;
 }
+*{
+    box-sizing: border-box;
+}
