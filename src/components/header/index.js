@@ -20,7 +20,7 @@ export default function Header() {
           <span class={style.navItemText}>Nebula</span>
           <span class={style.navItemLabel}>for Android</span>
         </Link>
-        <Link class={style.navItem} activeClassName={style.active} href="/profile/shop">
+        <Link class={style.navItem} activeClassName={style.active} href="/mask">
           <span class={style.navItemText}>Shop</span>
           {/* <span class={style.navItemLabel}>haha</span> */}
         </Link>
