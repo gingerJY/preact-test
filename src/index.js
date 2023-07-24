@@ -6,6 +6,7 @@ import { Header, Footer } from './components';
 import Home from './routes/home';
 import Profile from './routes/profile';
 import NebulaForMac from './routes/nebula-for-mac'
+import Mask from './routes/mask';
 
 import './style/index.css';
 import './style/reset.css';
@@ -20,6 +21,7 @@ export default function App() {
           <Profile path="/profile/" user="me" />
           <Profile path="/profile/:user" />
           <NebulaForMac path="/nebula-for-mac"/>
+          <Mask path="/mask" />
         </Router>
       {/* </main> */}
       <Footer />

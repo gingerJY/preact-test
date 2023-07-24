@@ -1,0 +1,130 @@
+.mask {
+  .origin {
+    margin-bottom: 30px;
+    width: 800px;
+    height: 450px;
+    background: url(https://resource.xreal.com/www-xreal-com/images/experience/arspaceMedia2.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .maskLinear {
+    mask: linear-gradient(90deg, transparent, #000);
+  }
+
+  .multiImg {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url(https://resource.xreal.com/www-xreal-com/images/experience/arspaceMedia1.jpg) no-repeat;
+      background-size: cover;
+      mask: linear-gradient(90deg, #000 50%, transparent 50%);
+      z-index: 1;
+    }
+  }
+
+  .multiImg2 {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url(https://resource.xreal.com/www-xreal-com/images/experience/arspaceMedia1.jpg) no-repeat;
+      background-size: cover;
+      mask: linear-gradient(90deg, #000 40%, transparent 60%);
+      z-index: 1;
+    }
+  }
+
+  .multiImg3 {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url(https://resource.xreal.com/www-xreal-com/images/experience/arspaceMedia1.jpg) no-repeat;
+      background-size: cover;
+      mask: linear-gradient(45deg, #000 50%, transparent 50%);
+      z-index: 1;
+      animation: maskRotate 4s ease-in-out infinite;
+    }
+  }
+
+  @keyframes maskRotate {
+    @for $i from 50 through 100 {
+      #{$i}% {
+        mask: linear-gradient(45deg, #000 #{$i + '%'}, transparent #{$i + '%'});
+      }
+    }
+  }
+}
+
+.test1 {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  cursor: pointer;
+
+  .img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    background: url(https://resource.xreal.com/www-xreal-com/images/experience/arspaceMedia1.jpg) no-repeat;
+    background-size: cover;
+    background-position: left center;
+    // mask: linear-gradient(90deg, #000 50%, transparent 50%);
+    &:hover {
+      right: 0;
+      z-index: 9;
+      animation: maskLeft 2s ease-in-out;
+    }
+  }
+
+  .img2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    background: url(https://resource.xreal.com/www-xreal-com/images/experience/arspaceMedia2.jpg) no-repeat;
+    background-size: cover;
+    background-position: right center;
+    // mask: linear-gradient(270deg, #000 50%, transparent 50%);
+    &:hover {
+      left: 0;
+      z-index: 9;
+      animation: maskRight 2s ease-in-out;
+    }
+  }
+}
+
+@keyframes maskLeft {
+  @for $i from 0 through 50 {
+    #{$i}% {
+      mask: linear-gradient(90deg, #000 #{$i + 50 + '%'}, transparent #{$i + 50 + '%'});
+    }
+  }
+}
+
+@keyframes maskRight {
+  @for $i from 0 through 50 {
+    #{$i}% {
+      mask: linear-gradient(270deg, #000 #{$i + 50 + '%'}, transparent #{$i + 50 + '%'});
+    }
+  }
+}
